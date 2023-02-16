@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ToastData } from './Components/Common components/toast-component/toast-data';
-
+import { UserDataService } from './user-data.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +8,8 @@ import { ToastData } from './Components/Common components/toast-component/toast-
 })
 
 export class AppComponent {
-  
+  data:any;
+  constructor(private service:UserDataService){}
   title = 'QarmaAssessment-18';
   dataToDisplay = {
    title: 'Remove User',
@@ -32,5 +33,12 @@ export class AppComponent {
     message: 'Data is successfully updated',
     success: true,
     error: false
+}
+tdata:any=[]
+ngOnInit(){
+  this.service.getDet().subscribe((res: object)=>{
+    this.tdata=res
+    console.log(res)
+  });
 }
 }

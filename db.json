@@ -1,0 +1,47 @@
+{
+    
+  "users": [
+   
+    {
+      "FirstName": "sikha",
+      "LastName": "madhu",
+      "UserName": "asdfghjk",
+      "Age": 6,
+      "emailid": "sikhamadhu97@gmail.com",
+      "Phoneno": "1234567890",
+      "Date": "",
+      "AdditionalData": [
+        "dfgh",
+        "dfgh",
+        "dfgh"
+      ],
+      "AdditionalValue": [
+        "9",
+        "9",
+        "9"
+      ],
+      "id": 2
+    },
+    {
+      "FirstName": "xsdcfvgb",
+      "LastName": "sdfg",
+      "UserName": "Aszdxfcvghbnj",
+      "Age": 78,
+      "emailid": "sikhamadhu97@gmail.com",
+      "Phoneno": "1234567890",
+      "Date": "",
+      "AdditionalData": [
+        "abc",
+        "abcd",
+        "abcd"
+      ],
+      "AdditionalValue": [
+        "true",
+        "saf",
+        "saf"
+      ],
+      "id": 3
+    }
+  ]
+
+}
