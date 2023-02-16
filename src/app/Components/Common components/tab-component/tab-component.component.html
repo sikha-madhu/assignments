@@ -1,0 +1,35 @@
+<!-- <div class="tabs">
+    <div class="tabs--content">Joined</div>
+    <div class="tabs--content" >Suggestions</div>
+</div>
+<div class="array--tag">
+<div *ngFor="let i of array" class="array">
+    <div>{{i}}</div>
+</div>
+<ul class="tabs" >
+    <li (click)="onTabClick('Joined details')" [class.active]="activeTab == 'Joined details'" class="tabs--content" >Joined</li>
+    <li (click)="onTabClick('Required details')"[class.active]="activeTab == 'Required details'"class="tabs--content" >Required</li>
+    <li (click)="onTabClick('Suggestions details')"[class.active]="activeTab == 'Suggestions details'"class="tabs--content" >Suggestions</li>
+</ul>
+
+
+<div *ngIf="activeTab == 'Joined details'" class="tab--details">
+Joined details
+</div>
+<div *ngIf="activeTab == 'Required details'"  class="tab--details">
+    Required details
+</div>
+<div *ngIf="activeTab == 'Suggestions details'" class="tab--details">
+    Suggestions details
+</div> -->
+<div class="tabs">
+<div class="tabs--content">
+    <div *ngFor="let item of tabDataItem" id="tab"(click)="isselected = item.value"> {{ item.label }}
+        <div [class.selected]="isselected === item.value"></div>
+    </div>
+</div>
+</div>
+<!-- div to get  selected content of the dinamically by usimg loops -->
+<div class="tab--details">
+    <div *ngFor="let item of tabDataContent" [hidden]="isselected !== item.value">{{ item.content }}</div>
+  </div>

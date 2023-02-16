@@ -1,0 +1,46 @@
+.tabs{
+    /* display: flex; */
+  
+ /* background: #eee; */
+ list-style-type: none;
+ padding-left: 0px;
+ margin-bottom: 0;
+ height: 40px;
+ border-bottom: 1px solid #ccc;
+ width: 100%;
+}
+/* .array{
+    padding: 15px;
+    color: red;
+} */
+.tabs--content{
+    /* width: 33.33%; */
+    font-family: Source Sans Pro, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    position: relative;
+    /* height: 100%; */
+    padding: 10px;
+    float: left;
+    text-align:center;
+    gap: 33px;
+    display: flex;
+    align-items: center;
+}
+.selected{
+    border-bottom: 3px solid #3399FF;
+    /* transition: ease-in-out .3s; */
+}
+.tab--details{
+    /* display: flex; */
+    padding: 11px;
+    height: 172px;
+    /* align-items: center; */
+    border: 1px black;
+    /* justify-content: space-around; */
+}
+/* .array--tag{
+    display:flex;
+
+} */
+
+
