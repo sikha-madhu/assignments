@@ -1,0 +1,28 @@
+<button id="myBtn" (click)="popUp()">pop up</button>
+
+<div id="myModal" class="modal">
+
+  <div class="popUp-content">
+    
+    <!-- <p>this is pop up</p> -->
+    <div class="cautionHeader">
+        <div class="popUp--content__title"><div><img src="assets\svg\Group 603remove user.svg" alt="caution"></div>
+        <div>{{ data.title }}</div>
+        </div>
+        <div>
+            <div>{{ data.question }}</div>
+            <b>  <div>{{data.userName}}</div></b>
+          <div>{{data.confirmation1}} {{data.userName}} {{data.confirmation2}}</div> 
+          <div> {{data.confirmationDis1}}</div>
+          <div> {{data.confirmationDis2}}</div> 
+        </div>
+       
+
+        <div class="popup-buttons" >
+        <button (click)="closePopUp()">close</button>
+        <button>Remove user</button>
+      </div>
+        
+    </div>
+  </div>
+</div>

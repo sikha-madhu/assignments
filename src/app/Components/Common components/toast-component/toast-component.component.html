@@ -1,0 +1,7 @@
+
+<div class="toast" *ngIf="show" [ngClass]="{'success': data.success,'error': data.error}">
+  
+    <div class="toast__message">{{data.message }}</div>
+    <b><div class="toast-icon"  >{{ data.success ? '✓' : '✕' }}</div></b>
+  </div>
+  
