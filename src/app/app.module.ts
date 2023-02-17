@@ -9,6 +9,8 @@ import { TabComponentComponent } from './Components/Common components/tab-compon
 import { PopupComponentComponent } from './Components/Common components/popup-component/popup-component.component';
 import { ToastComponentComponent } from './Components/Common components/toast-component/toast-component.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ProjectCreationFormComponent } from './Components/projectCreation/project-creation-form/project-creation-form.component';
+import { ProjectAckComponent } from './Components/projectCreation/project-ack/project-ack.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import {HttpClientModule} from '@angular/common/http';
     ProjectWelcomepageComponent,
     TabComponentComponent,
     PopupComponentComponent,
-    ToastComponentComponent
+    ToastComponentComponent,
+    ProjectCreationFormComponent,
+    ProjectAckComponent
   ],
   imports: [
     BrowserModule,

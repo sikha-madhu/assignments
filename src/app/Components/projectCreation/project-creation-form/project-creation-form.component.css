@@ -1,0 +1,88 @@
+.projectFormComponent {
+    padding: 40px;
+    /* line-height: 0.6; */
+}
+
+.profileIcon {
+    width: 122px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    background: #F3F3F3;
+    border: 1px solid rgba(102, 102, 102, 0.5);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.formSubmitionButtons {
+    float: right;
+    display: flex;
+    position: fixed;
+    bottom: 46px;
+    right: 48px;
+    gap: 27px;
+}
+
+.background {
+    float: right;
+    top: -285px;
+    position: relative;
+    right: 118px;
+
+}
+
+.projectTitle {
+    width: 400px;
+    height: 30px;
+    border: 1px solid #666666;
+    margin: 10px 10px 10px 0px;
+
+}
+
+.projectDecription {
+    width: 400px;
+    height: 100px;
+    border: 1px solid #666666;
+    margin: 10px 10px 10px 0px;
+
+}
+
+.submitbutton {
+    background-color: #ffffff;
+    border-color: #666666;
+    color: black;
+    border: 2px solid #008CBA;
+    height: 41px;
+    width: 88px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.projectVisibility {
+    display: flex;
+    gap: 20px;
+    padding: 20px 10px 10px 0px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #222222;
+
+    opacity: 0.5;
+}

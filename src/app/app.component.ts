@@ -34,6 +34,9 @@ export class AppComponent {
     success: true,
     error: false
 }
+welcomeTitle ={
+  
+}
 tdata:any=[]
 ngOnInit(){
   this.service.getDet().subscribe((res: object)=>{
